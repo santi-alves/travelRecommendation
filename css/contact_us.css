@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://www.tahiti.com/images1/thumbs/conrad-bora-bora-nui-aerial-1200x720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 11%);
+    opacity: .85;
+    padding: .75rem;
+}
+
+#navbar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    font-size: 3rem;
+    rotate: -45deg;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding-right: 51vw;
+}
+
+#main-container {
+    min-height: calc(100vh - 3rem);
+    background-image: linear-gradient(to right, hsla(172, 74%, 26%, 0.856), hsla(0, 0%, 71%, 0.13));
+    display: grid;
+    grid-template-columns: /* 5% 50% 40% */ repeat(12, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#hero-section {
+    grid-column: 2 / 12;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 10vh;
+}
+
+#main-container h1 {
+    grid-column: 2 / 7;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    padding-top: 50%;
+}
+
+#main-container form {
+    grid-column: 7 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 15vh;
+    background-color: hsla(0, 0%, 11%, 0.432);
+    height: fit-content;
+    border-radius: .5rem;
+}
+
+#main-container form > input, #main-container form > textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    color: white;
+}
+
+#main-container form > input::placeholder, #main-container form > textarea::placeholder {
+    color: lightgray;
+}
+
+#main-container form > button {
+    background-color: hsl(172, 74%, 26%);
+    color: white;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 40vh;
+    font-size: 2rem;
+}

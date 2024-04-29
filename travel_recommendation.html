@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/travel_recommendation.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div>
+        <i id="logo" class="fa-solid fa-plane"></i>
+        <i>TravelBloom</i>
+      </div>
+
+      <ul>
+        <li>
+          <a href="/travel_recommendation.html">Home</a>
+        </li>
+        <li>
+          <a href="/about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="/contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <form id="search-form">
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Enter a destination or keyword"
+        />
+        <button type="submit" id="search-btn">Search</button>
+        <button type="reset" id="clear-btn">Clear</button>
+      </form>
+    </nav>
+
+    <main id="main-container">
+      <div id="social-media-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div id="hero-section">
+        <h1>Explore<br />dream<br />destination</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur,<br />adipisicing elit. Magnam
+          non vitae<br />
+          dolores provident quod in, ratione<br />
+          adipisci animi necessitatibus maxime<br />
+          veniam doloribus corporis iure, laborum<br />
+          beatae distinctio minus qui facere.
+        </p>
+        <a href="#" id="book-now">Book now</a>
+      </div>
+
+      <aside id="search-results-container">
+        <!-- Dynamic content goes here -->
+      </aside>
+    </main>
+
+    <script src="js/travel_recommendation.js"></script>
+  </body>
+</html>
