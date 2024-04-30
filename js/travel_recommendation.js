@@ -21,7 +21,7 @@ const generateHTMLDynamicContent = () => {
       "#search-results-container"
     );
 
-    const data = await fetchData("../travel_recommendation_api.json");
+    const data = await fetchData("travel_recommendation_api.json");
 
     const searchResults = getSearchResults(data, searchBar);
 
